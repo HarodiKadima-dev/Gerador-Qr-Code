@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif; /* Fonte moderna */
+}
+
+body{
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradiente top */
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container{
+  padding: 32px 24px;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3); /* Sombra suave */
+  background: #fff;
+  width: 100%;
+  max-width: 420px; /* Limita largura no desktop */
+  height: auto; /* Auto em vez de 80vh */
+}
+
+input{
+  padding: 14px 16px;
+  margin: 12px 0 20px;
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+  width: 100%;
+  font-size: 16px;
+  transition: all 0.2s; /* Animação suave */
+}
+
+input:focus{
+  outline: none;
+  border-color: #667eea; /* Borda roxa ao clicar */
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+button{
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 14px;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s, opacity 0.2s; /* Animação */
+}
+
+button:hover{
+  opacity: 0.9;
+}
+
+button:active{
+  transform: scale(0.98); /* Afunda quando clica */
+}
+
+button:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#baixarBtn{
+  margin-top: 16px;
+  background: #48bb78; /* Verde pra diferenciar do "Gerar" */
+}
+
+img{
+  max-width: 100%;
+  margin: 20px 0;
+  border-radius: 12px;
+}
